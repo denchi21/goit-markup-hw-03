@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -11,6 +17,19 @@ li {
 a {
     text-decoration: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
 
 .nav-section {
     font-weight: 500;
@@ -146,7 +165,6 @@ a {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center;
     color: #2e2f42;
 }
 
@@ -157,6 +175,7 @@ a {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+
 }
 
 .port-card {
