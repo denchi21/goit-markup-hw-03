@@ -70,7 +70,8 @@ padding: 0 15px 0 15px;
 .nav-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-list-link {
     font-weight: 500;
@@ -185,7 +186,8 @@ padding: 0 15px 0 15px;
 .adv-list {
     display: flex;
     gap: 24px;
-    padding: 120px 0 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     flex-direction: row;
     align-items: flex-start;
 }
@@ -216,11 +218,6 @@ padding: 0 15px 0 15px;
     background-color: #F4F4FD;
 }
 
-.team-list {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 120px;
-}
 .team-title {
     text-align: center;
     font-size: 36px;
@@ -229,7 +226,13 @@ padding: 0 15px 0 15px;
     text-transform: capitalize;
     color: #2e2f42;
     padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72   px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .team-card {
@@ -271,6 +274,8 @@ padding: 0 15px 0 15px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -289,7 +294,6 @@ padding: 0 15px 0 15px;
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding: 120px 0 0 0;
     margin-bottom: 72px;
 }
 
@@ -297,7 +301,7 @@ padding: 0 15px 0 15px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
-    padding: 32px 0 0 16px;
+    padding: 32px 16px;
 }
 
 .port-subtitle {
@@ -314,14 +318,12 @@ padding: 0 15px 0 15px;
     letter-spacing: 0.02em;
     font-size: 16px;
     color: #434455; 
-    padding-bottom: 32px;
 }
 
 /*Section Footer */
 
 .footer-main {
     background-color: #2e2f42;
-    margin-top: 148px;
     padding: 100px 0 100px;
 }
 
