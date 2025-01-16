@@ -10,12 +10,26 @@ body {
     background-color: #FFFFFF;
 }
 
-li {
+p, h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+address { 
+    font-style: normal;
 }
 
 .visually-hidden {
@@ -31,15 +45,38 @@ a {
     overflow: hidden;
 } 
 
-.nav-section {
+.container { 
+    width: 1158px;
+margin: 0 auto;
+padding: 0 15px 0 15px;
+}
+
+/*Section Header*/
+
+.header-container {
+    border-bottom: 1px solid #e7e9fc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
+.nav-list-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-.nav-section:focus,
-.nav-section:hover {
+.nav-list-link:focus,
+.nav-list-link:hover {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -55,6 +92,9 @@ a {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
 }
 .logo-header-studio {
     font-family: "Raleway", sans-serif;
@@ -64,8 +104,14 @@ a {
 }
 
 .address {
-    font-style: normal;
+    display: flex;
 }
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .address-head {
     font-weight: 400;
     font-size: 16px;
@@ -86,8 +132,12 @@ a {
     color: #404bbf;
 }
 
+ /*Section Main*/
+
 .info-page {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .page-title {
@@ -97,6 +147,9 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;    
 }
 .button {
     font-weight: 500;
@@ -107,6 +160,10 @@ a {
     background: #4d5ae5;
     text-align: center;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .button:hover,
@@ -115,12 +172,23 @@ a {
     cursor: pointer;
 }
 
+/*Section Advantages*/
+
+
+.adv-item {
+    max-width: 264px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .adv-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    
 }
 
 .adv-text {
@@ -129,10 +197,17 @@ a {
     letter-spacing: 0.02em;
 }
 
+/*Section Team*/
+
 .our-team {
     background-color: #F4F4FD;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+}
 .team-title {
     text-align: center;
     font-size: 36px;
@@ -140,6 +215,8 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .team-card {
@@ -152,13 +229,20 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    text-align: center;
 }
 
 .team-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 32px;
 }
+
+/*Section Portfolio*/
 
 .portfolio {
     font-size: 36px;
@@ -192,6 +276,8 @@ a {
     font-size: 16px;
     color: #434455; 
 }
+
+/*Section Footer */
 
 .footer-main {
     background-color: #2e2f42;
