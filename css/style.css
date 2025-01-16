@@ -64,7 +64,9 @@ padding: 0 15px 0 15px;
 
 .nav-menu {
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-list {
@@ -99,8 +101,6 @@ padding: 0 15px 0 15px;
     display: flex;
     align-items: center;
     margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .logo-header-studio {
