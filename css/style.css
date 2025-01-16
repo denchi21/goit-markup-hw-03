@@ -176,12 +176,13 @@ padding: 0 15px 0 15px;
 
 .adv-list {
     display: flex;
-    flex-wrap: wrap;
+    gap: 24px;
+    padding: 120px 0;
 }
 
 .adv-item {
-    max-width: 264px;
-    
+    width: 264px;
+   
 }
 
 .adv-title {
@@ -269,7 +270,6 @@ padding: 0 15px 0 15px;
 
 
 .port-title {
-    display: flex;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -278,7 +278,6 @@ padding: 0 15px 0 15px;
     color: #2e2f42;
     padding-top: 120px;
     padding-bottom: 72px;
-    align-items: center;
 }
 
 .port-descr-section {
@@ -313,8 +312,9 @@ padding: 0 15px 0 15px;
 }
 
 .footer {
+    margin-top: 148px   ;
     padding: 100px 0 100px 0;
-    width: 264px;   
+    width: 264px;
 }
 
 .logo-footer-studio {
