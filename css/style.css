@@ -174,11 +174,14 @@ padding: 0 15px 0 15px;
 
 /*Section Advantages*/
 
+.adv-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .adv-item {
     max-width: 264px;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .adv-title {
@@ -221,6 +224,10 @@ padding: 0 15px 0 15px;
 
 .team-card {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    width: 264px;
+    height: 380px;  
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-person {
@@ -252,22 +259,43 @@ padding: 0 15px 0 15px;
     color: #2e2f42;
 }
 
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+
 .port-title {
+    display: flex;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-
+    padding-top: 120px;
+    padding-bottom: 72px;
+    align-items: center;
 }
 
-.port-card {
+.port-descr-section {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding-left: 16px;
+}
+
+.port-subtitle {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     font-size: 20px;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 
 .port-text {
@@ -275,12 +303,18 @@ padding: 0 15px 0 15px;
     letter-spacing: 0.02em;
     font-size: 16px;
     color: #434455; 
+    padding-bottom: 32px;
 }
 
 /*Section Footer */
 
 .footer-main {
     background-color: #2e2f42;
+}
+
+.footer {
+    padding: 100px 0 100px 0;
+    width: 264px;   
 }
 
 .logo-footer-studio {
@@ -294,7 +328,8 @@ padding: 0 15px 0 15px;
 }
 
 .footer-text {
-        line-height: 1.5;
+    padding-top: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-        color: #f4f4fd;
+    color: #f4f4fd;
 }
